@@ -1,4 +1,4 @@
--- Product table containing product information
+-- Defines Product's definition.
 create table Products
 (
     ID INT PRIMARY KEY IDENTITY(1,1),
