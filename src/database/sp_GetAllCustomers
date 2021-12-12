@@ -1,4 +1,4 @@
 create proc sp_GetAllCustomers
 begin
-    Select * from Customers
+    Select ID, Name, DoB from Customers
 end
