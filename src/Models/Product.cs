@@ -1,3 +1,4 @@
+// Defines a product class.
 public class Product
 {
     public int Id {get;set;}
