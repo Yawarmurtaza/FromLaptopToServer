@@ -1,6 +1,6 @@
-Create table Customers
+Create table Refunds
 (
     ID INT Primary Key Identity(1,1),
-    Name NVARCHAR(100),
-    DoB DATETIME2
+    CustomerId INT REFERENCES CUSTOMERS.ID
+    PayementId INT REFERENCES Payement.Id
 );
