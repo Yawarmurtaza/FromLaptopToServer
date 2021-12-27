@@ -1,6 +1,14 @@
-// Allows access to the customers storage.
-public interface ICustomerDataAccess
+namespace DataAccessLayer
 {
-    // Gets all customers from the data store.
-    Task<IEnumerable<Product> GetAllCustomers();   
+    // Allows access to the customers storage.
+    public interface ICustomerDataAccess
+    {
+        // Gets all customers from the data store.
+        Task<IEnumerable<Product>> GetAllCustomers();
+    }
+
+    public sealed class CustomerDataAccess : ICustomerDataAccess
+    {
+
+    }
 }
